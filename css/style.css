@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(110, 175, 248);
+}
+
+header{
+    margin-top:100px;
+    margin-bottom: 80px;
+    text-align: center;
+    
+}
+
+header .logo{
+    border-width: 3px;
+    border-style: solid;
+    border-color:white;
+    font-size: 1.75rem;
+    font-family: "Source Sans Pro",Helvetica,sans-serif;
+    padding: 1rem 1.75rem;
+
+    color:white;
+    font-weight:900;
+    text-decoration: none;
+}
+
+header.logo:hover, a:hover{
+    border-color:rgb(72, 111, 156);
+    color:rgb(72, 111, 156);
+}
+
+
+main{
+    background-color: #fff;
+    /* position: relative; */
+    margin: 0 auto;
+    width: calc(100% - 10rem);
+    max-width: 72rem;
+    z-index: 2;
+    padding: 4rem 2rem 2rem 2rem;
+    margin-bottom: 100px;
+}
+
+article .post-title{
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+header.post-title>.date{
+    display: block;
+    position:relative;
+}
+
+header.post-title .date::before, header.post-title .date::after {
+    /* content:'';
+    background: red;
+    display: block;
+    width:10px;
+    height:10px; */
+
+    /* content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 6rem);
+    border-top: solid 2px; */
+
+
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45.5%;
+    width: calc(50% - 6rem);
+    border-top: solid 2px;
+    border-top-color: #eee;
+}
+
+header.post-title>.date:before {
+    left: 0;
+}
+
+header.post-title>.date:after {
+    right: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}   
+
+
+.image1{
+    width: 100%;
+    object-fit: cover;
+}
+
+.authors{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -40px;
+    /* padding: 10px; */
+}
+
+.author-box{
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 5px 20px;
+    margin: 0 20px 20px;
+    border: none;
+    color:#212931;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.author-box .author-profile-image {
+    height: 100px;
+    width: 90px;
+    margin-right: 20px;
+}
+
+.author-profile-image {
+    flex-shrink: 0;
+    margin: 0 0 20px 0;
+    width: 100px;
+    height: 100px;
+    box-shadow: rgba(255,255,255,0.1) 0 0 0 6px;
+    display: block;
+    background: #222;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.text-content p{
+    text-align: justify;
+}
+
